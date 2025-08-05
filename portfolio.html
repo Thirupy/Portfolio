@@ -769,7 +769,7 @@
                 
                 if (data.status === 'success' && data.message === 'retrieved') {
                     solvedElement.textContent = data.totalSolved + '+';
-                    acceptanceElement.textContent = Math.round(data.acceptanceRate) + '%';
+                    acceptanceElement.textContent = data.acceptanceRate + '%';
                     return;
                 }
             } catch (error) {
@@ -854,4 +854,5 @@
         }
     </script>
 </body>
+
 </html>
